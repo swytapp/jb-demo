@@ -6,6 +6,10 @@ const path = require('path');
 
 app.use('/TemplateData', express.static(__dirname + '/TemplateData'));
 app.use('/Build', express.static(__dirname + '/Build'));
+app.use((req, res, next) => {
+    res.setHeader('Content-Encoding', 'gzip');
+    next();
+});
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
