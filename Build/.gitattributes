@@ -1,3 +1,0 @@
-FlappyDawgNoCompression.data filter=lfs diff=lfs merge=lfs -text
-FlappyDawgGzip.data.gz filter=lfs diff=lfs merge=lfs -text
-FlappyDawgGzip.data.unityweb filter=lfs diff=lfs merge=lfs -text
